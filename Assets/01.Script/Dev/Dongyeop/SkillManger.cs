@@ -11,7 +11,10 @@ public class SkillManger : MonoBehaviour //특정키를 누르면 현제 스킬의 스프라이�
     [SerializeField] private GameObject _nextJump;
     [SerializeField] private GameObject _nextShield;
 
+    [SerializeField] private GameObject Pausemenu;
+
     public int thisSkillNum = 1;
+
 
     private void Start()
     {
@@ -30,8 +33,9 @@ public class SkillManger : MonoBehaviour //특정키를 누르면 현제 스킬의 스프라이�
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-            thisSkillNum++;
+        if(Pausemenu.GetComponent<PauseMenu>().pauseState == false)
+            if (Input.GetKeyDown(KeyCode.F))
+                thisSkillNum++;
         if (thisSkillNum == 4)
             thisSkillNum = 1;
 
