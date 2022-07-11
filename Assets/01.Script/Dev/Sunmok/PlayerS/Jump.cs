@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class Jump : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private Rigidbody2D Rigid;
@@ -18,10 +18,10 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Jump();
+        Jumping();
     }
 
-    private void Jump()
+    private void Jumping()
     {
         //조건문들 추가 조건 달 것
         //1단점프
