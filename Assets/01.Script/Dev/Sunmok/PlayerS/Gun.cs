@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    void Update()
+    public void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            Poolable obj = PoolManager.Instance.Summon("Bullet");
+        Poolable obj = PoolManager.Instance.Summon("Bullet");
             obj.transform.position = transform.position;
-        }
+
     }
 }
