@@ -79,4 +79,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d06781fa6b326c4b8e82acbb9b879c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneScore1: 0
+  _sceneScore1: 1
