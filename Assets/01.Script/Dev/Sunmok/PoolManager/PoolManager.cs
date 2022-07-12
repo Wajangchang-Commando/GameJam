@@ -26,18 +26,18 @@ public class PoolManager : MonoBehaviour
             Summon(obj1.name);
         }
     }
-    private void make(Poolable pol)
+    public void make(Poolable pol)
     {
         Pool pool = new Pool();
         pool.Create(pol);
         pools.Add(pol.name, pool);
     }
-    private Poolable Summon(string name)
+    public Poolable Summon(string name)
     {
         Poolable obj = pools[name].pop();
         return obj;
     }
-    private void Returner(Poolable obj)
+    public void Returner(Poolable obj)
     {
         pools[obj.name].push(obj);
     }

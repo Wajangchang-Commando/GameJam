@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scenes/Main/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/00.Scenes/Dev/Dongyeop/DongyeopStart.unity
+    guid: bb43dde2c70d6364a8a4253cd9cc7f3a
+  - enabled: 1
+    path: Assets/00.Scenes/Dev/Dongyeop/Dongyeop.unity
+    guid: 606b8f8c291913a4095514a3d468ff61
   m_configObjects: {}
