@@ -17,7 +17,7 @@ public class Enemy1 : MonoBehaviour
     void Update()
     {
         currenttime +=Time.deltaTime;
-        if(currenttime > 1)
+        if(currenttime > 1.5f)
         {
             GameObject Bullet = Instantiate(Enemy_bullet);
             Bullet.transform.position = transform.position;
