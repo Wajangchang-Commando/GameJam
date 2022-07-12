@@ -9,22 +9,16 @@ public class PoolManager : MonoBehaviour
     public Poolable obj1;
     public Poolable obj2;
     public Poolable obj3;
+    public Poolable obj4;
     public static PoolManager Instance;
 
     private void Awake()
     {
         Instance = this;
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            make(obj1); ;
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Summon(obj1.name);
-        }
+        make(obj1);
+        make(obj2);
+        make(obj3);
+        make(obj4);
     }
     public void make(Poolable pol)
     {

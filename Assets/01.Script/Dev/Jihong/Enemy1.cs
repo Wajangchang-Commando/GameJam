@@ -17,10 +17,10 @@ public class Enemy1 : MonoBehaviour
     void Update()
     {
         currenttime +=Time.deltaTime;
-        if(currenttime > 1.5f)
+        if(currenttime > 3)
         {
-            GameObject Bullet = Instantiate(Enemy_bullet);
-            Bullet.transform.position = transform.position;
+            Poolable obj = PoolManager.Instance.Summon("HaHoeTal");
+            obj.transform.position = transform.position;
             currenttime = 0;
         }
     }
