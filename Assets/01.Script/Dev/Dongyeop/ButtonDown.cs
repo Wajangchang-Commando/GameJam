@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonDown : MonoBehaviour // 버튼 눌렀을때 사용되는 스크립트에용 ㅎㅎ
 {
     [SerializeField] private int _sceneScore1;
+    [SerializeField] private int _sceneScore2;
 
     public void ExitButtonDown()
     {
@@ -14,6 +15,11 @@ public class ButtonDown : MonoBehaviour // 버튼 눌렀을때 사용되는 스크립트에용 �
     }
 
     public void SceneChanger1()
+    {
+        SceneManager.LoadScene(_sceneScore1);
+    }
+
+    public void SceneChanger2()
     {
         SceneManager.LoadScene(_sceneScore1);
     }
