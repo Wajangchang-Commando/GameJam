@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolManager : MonoBehaviour
+public class HaHoeTal : MonoBehaviour
 {
-    // Start is called before the first frame update
+    float speed=10;
     void Start()
     {
         
@@ -13,6 +13,6 @@ public class PoolManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position += Vector3.left * Time.deltaTime * speed;
     }
 }
