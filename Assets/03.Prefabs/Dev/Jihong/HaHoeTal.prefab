@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 310480390294149331}
   - component: {fileID: 6611822703527285521}
   - component: {fileID: -186827219299406189}
+  - component: {fileID: -6668114369163912764}
   m_Layer: 0
   m_Name: HaHoeTal
   m_TagString: Untagged
@@ -156,5 +157,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8274c1673b139e4c830030c8a4f67c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6668114369163912764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753304414491453587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc42b2c55efdc5a48ba288f85285dff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -8,5 +8,9 @@ public class Map : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * Time.deltaTime*5; 
+        if(transform.position.x < -17.5)
+        {
+            transform.position = new Vector3(17.5f, 0);
+        }
     }
 }

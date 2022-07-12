@@ -25,6 +25,7 @@ public class SpriteChanger : MonoBehaviour // playerHP가 깍이면 스프라이트가 하�
 
     private void PlayerHP()
     {
+        playerHP--;
         switch (playerHP)
         {
             case 5:
