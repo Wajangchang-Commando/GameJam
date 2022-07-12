@@ -8,7 +8,7 @@ public class UseSkill : MonoBehaviour
     [SerializeField] private Jump jump;
     [SerializeField] private Shielding shielding;
 
-    [SerializeField] private SkillManger Skill;
+    [SerializeField] private SkillManager Skill;
     
     private void Update()
     {
