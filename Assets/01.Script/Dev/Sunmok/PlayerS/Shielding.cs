@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Shielding : MonoBehaviour
 {
-    [SerializeField]GameObject Shield;
+    [SerializeField] public GameObject Shield;
 
-    void Update()
+    public void shield()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            Shield.SetActive(true);
-        }
-        if (Input.GetKeyUp(KeyCode.J))
-        {
-            Shield.SetActive(false);
-        }
+            StopAllCoroutines();
+        StartCoroutine(guard());
+    }
+    IEnumerator guard()
+    {
+        Shield.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Shield.SetActive(false);
+        yield return null;
     }
 }
