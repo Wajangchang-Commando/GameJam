@@ -33,14 +33,17 @@ public class SkillManger : MonoBehaviour //특정키를 누르면 현제 스킬의 스프라이�
 
     private void Update()
     {
-        if(Pausemenu.GetComponent<PauseMenu>().pauseState == false)
-            if (Input.GetKeyDown(KeyCode.F))
-                thisSkillNum++;
         if (thisSkillNum == 4)
             thisSkillNum = 1;
 
         ThisSkill();
         NextSkill();
+    }
+
+    public void LeftButtonDown()
+    {
+        if (Pausemenu.GetComponent<PauseMenu>().pauseState == false)
+            thisSkillNum++;
     }
 
     private void ThisSkill() //지금의 사용할 수 있는 스킬이 어떤건지
